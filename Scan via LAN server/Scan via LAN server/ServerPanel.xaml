@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="Scan_via_LAN_server.ServerPanel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Scan_via_LAN_server"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch">
+        <Grid HorizontalAlignment="Center" Width="700">
+            <TextBlock x:Name="txblock_Listening" HorizontalAlignment="Left" Margin="50,30,0,0" Text="Server is listening" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="300" FontSize="36"/>
+            <TextBlock x:Name="txblock_Off" HorizontalAlignment="Left" Margin="50,30,0,0" Text="Server is off" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="300" FontSize="36" Visibility="Collapsed"/>
+            <Button x:Name="button_Start" Content="START" HorizontalAlignment="Left" Margin="370,30,0,0" VerticalAlignment="Top" Height="50" Width="120" FontSize="24"/>
+            <Button x:Name="button_Stop" Content="STOP" HorizontalAlignment="Left" Margin="530,30,0,0" VerticalAlignment="Top" Height="50" Width="120" FontSize="24"/>
+        </Grid>
+        <ListBox x:Name="listbox_Logger" HorizontalAlignment="Center" Height="250" Margin="50,120,50,0" VerticalAlignment="Top" Width="700"/>
+    </Grid>
+</Page>
+
